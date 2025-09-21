@@ -24,7 +24,7 @@ int main(int argc, char** argv){
 	else{printf("Invalid Argument.\n"); return 0;}
 
 	if(v){
-		//printf("karaktrerlerin hepsi geçerli\n");
+
 		char r[3], g[3], b[3];
 
 		start = (str[0]=='0' && (str[1]=='x'||str[1]=='X')) ? 2 : 0;
@@ -41,7 +41,7 @@ int main(int argc, char** argv){
 		long rint = strtol(r, NULL, 16);
 		long gint = strtol(g, NULL, 16);
 		long bint = strtol(b, NULL, 16);
-		//printf("r:%d g:%d b:%d", (int)rint,(int)gint,(int)bint);
+
 
 		printf("\x1b[48;2;%u;%u;%um    \n    \x1b[0m\n", (int)rint, (int)gint, (int)bint);
 		
